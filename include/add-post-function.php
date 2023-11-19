@@ -87,6 +87,18 @@
     }
     // delete_data function for riya
 
+    function delete_data($conn,$id){
+        // $catch_img = "SELECT * FROM posts WHERE id=$id";
+        // $delete_std_info = mysqli_query($conn, $catch_img);
+        // $std_infoDle = mysqli_fetch_assoc($delete_std_info);
+        // $deleteImg_data = $std_infoDle['stg_img'];
+        $query = "DELETE FROM posts WHERE p_id=$id";
+        if(mysqli_query($conn, $query)){
+            //unlink('upload/'.$deleteImg_data);
+            return "Deleted Successfully";
+        }
+    }
+
     
 
     function adding_comment($conn,$post_id,$commnet_admin,$comment){
