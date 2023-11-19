@@ -56,7 +56,12 @@
 
     //  display_data_by_id remaining for riya
 
-
+    function display_data_by_id($conn,$id){
+        $query = "SELECT * FROM posts WHERE p_id=$id";
+        if(mysqli_query($conn, $query)){
+            return mysqli_query($conn, $query);
+        }
+    }
     
     function update_data($conn, $data){
         $course_code = $data['edit_course_code'];
