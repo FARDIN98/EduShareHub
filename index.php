@@ -15,22 +15,14 @@
     }
     $posts = desplay_my_data($conn,$user_data);
 
-    // Delete Post
-    if(isset($_POST['delete'])){
-        $delete_id = $_POST['id'];
-        $delmsg =  delete_data($conn, $delete_id);
-        header("Location: " . PAGES['home']);
-    }
+    // Delete Post will complete riya
 
-    // Edit Post
-    if(isset($_POST['edit_post'])){
-         $id = $_POST['id'];
-         $posts= display_data_by_id($conn,$id);
-         $old_data=mysqli_fetch_assoc($posts);
-    }
-    if(isset($_POST['edit_btn'])){
-        update_data($conn, $_POST);
-    }
+    
+
+    // Edit Post will complete riya
+
+
+    
 
     // Search
     if(isset($_GET['search-text'])) {
