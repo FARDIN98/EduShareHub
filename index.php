@@ -162,7 +162,7 @@
             <div class="post-btn-container">
                 <form action="" method="post">
                 <!-- Download feature for shakin -->
-
+                <a class="post-dl-btn" href="uploads/files/<?php echo $post['file_link']; ?>">Download</a>
                 <!-- <a class="post-cm-btn" onclick="toggleVisibility('comment-post-popup')" >Comment</a> -->
                     <input type="hidden" name="id" value="<?php echo $post['p_id']; ?>">
 
