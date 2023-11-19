@@ -17,11 +17,22 @@
 
     // Delete Post will complete riya
 
-    
+    if(isset($_POST['delete'])){
+        $delete_id = $_POST['id'];
+        $delmsg =  delete_data($conn, $delete_id);
+        header("Location: " . PAGES['home']);
+    }
 
     // Edit Post will complete riya
 
-
+    if(isset($_POST['edit_post'])){
+        $id = $_POST['id'];
+        $posts= display_data_by_id($conn,$id);
+        $old_data=mysqli_fetch_assoc($posts);
+   }
+   if(isset($_POST['edit_btn'])){
+       update_data($conn, $_POST);
+   }
     
 
     // Search
