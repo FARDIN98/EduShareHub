@@ -78,9 +78,9 @@
                             <input type="password" name="password" placeholder="Password" class="input-login">
                             <p class="sm-text">Make it as long and as crazy as you'd like</p>
                 </div>
-                <!-- <div class="login-container"><button type="submit" name="signup" class="btn-register">Sign Up</button>
+                <div class="login-container"><button type="submit" name="signup" class="btn-register">Sign Up</button>
                     <a href="<?php echo PAGES['login']; ?>" class="forgot-password">Already have an account?</a>
-                </div> -->
+                </div>
         </div>
         </form>
     </div>
