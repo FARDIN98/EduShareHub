@@ -42,27 +42,12 @@
     } else
         $posts = view_post($conn,$user_data);
 
-    //add comment
-    if(isset($_POST['comment'])){
-       $post_id_for_comment = $_POST['id'];
-        //echo $post_id_for_comment;
-    }
-    if(isset($_POST['submit_comment'])){
-        $post_id = $_POST['post_id'];
-        $commnet_admin = $_POST['comment_admin'];
-        $comment = $_POST['comment_contant'];
-        //echo $post_id_for_comment;
-         echo adding_comment($conn,$post_id,$commnet_admin,$comment);
-        //  sleep(5);
-         header("Location: " . PAGES['home']);
-         die();
-    }
+    //add comment will be added by rahat
+    
 
-    //show comment
-    if(isset($_POST['view_comment'])){
-        $post_id = $_POST['id'];
-        $comment_data = show_comment($conn,$post_id);
-    }
+    //show comment will be added by rahat
+    
+    
      
 ?>
 
